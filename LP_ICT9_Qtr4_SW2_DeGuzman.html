@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Events and Functions</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<style>
+		body{
+			text-align: center;
+			background-color: #FFEEF1;
+		}
+		h1{
+		background-color: #FFD7DF;
+		color: #905661;
+		font-family: Edwardian Script ITC;
+	}
+	</style>
+</head>
+<body>
+	<h1>Basic Calculator</h1>
+	<img src="calculator.gif">
+	<br>
+	<form>
+		<input type="text" placeholder="Enter the 1st number" id="id1">
+		<input type="text" placeholder="Enter the 2nd number" id="id2">
+		<br>
+		<br>
+		<input type="submit" value="Multiply" onclick="Compute()">
+		<input type="submit" value="Divide" onclick="Divide()">
+		<input type="submit" value="Subtract" onclick="Subtract()">
+		<input type="submit" value="Add" onclick="Add()">
+	</form>
+	<script type="text/javascript">
+		function Compute() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			product = num1 * num2;
+				window.alert(product);
+		}
+		function Divide() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			quotient = num1 / num2;
+				window.alert(quotient);
+		}
+		function Subtract() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			difference = num1 - num2;
+				window.alert(difference);
+		}
+		function Add() {
+			num1 = Number(document.getElementById('id1').value);
+			num2 = Number(document.getElementById('id2').value);
+			sum = num1 + num2;
+				window.alert(sum);
+		}
+	</script>
+</body>
+</html>
